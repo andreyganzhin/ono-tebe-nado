@@ -11,7 +11,6 @@ body {
     background-color: #fff;
 }
 
-
 /* ---------- Шапка ---------- */
 .header {
     display: grid;
@@ -37,7 +36,6 @@ body {
     padding: 0;
 }
 
-/* ИСПРАВЛЕНО: Убрали circle и margin-left, сброс идет через gap у родителя */
 .header__links-list-item {
     list-style: none;
     margin-left: 0;
@@ -205,12 +203,10 @@ body {
     list-style: none;
 }
 
-/* ИСПРАВЛЕНО: Убрали min-height, чтобы сетка работала корректно */
 .lots__card-list-item {
     list-style: none;
-    /* min-height: 450px; <-- УДАЛИ эту строку, если она есть */
+    /* min-height удалён, чтобы сетка работала корректно на всех экранах */
 }
-
 
 .card-link {
     display: block;
@@ -280,21 +276,11 @@ body {
 /* ---------- Об аукционе ---------- */
 .about {
     display: grid;
-    /* Вместо 340px используем minmax, чтобы колонка не была слишком широкой и не ломала сетку */
-    grid-template-columns: minmax(280px, 340px) 1fr; 
-    gap: 40px; /* Чуть увеличим отступ, чтобы на 1100px было больше воздуха */
+    /* Гибкая ширина левой колонки, чтобы на 1100px не было наездов */
+    grid-template-columns: minmax(260px, 320px) 1fr;
+    gap: 40px;
     padding: 60px 25px;
 }
-
-/* Адаптив для .about: на экранах меньше 768px делаем одну колонку */
-@media (max-width: 768px) {
-    .about {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-        gap: 20px;
-    }
-}
-
 
 .about__logo {
     display: flex;
@@ -389,8 +375,7 @@ body {
     width: 100%;
 }
 
-
-/* ---------- Адаптив (минимальный, но обязательный) ---------- */
+/* ---------- Адаптив ---------- */
 @media (max-width: 768px) {
     .header {
         grid-template-columns: 1fr;
@@ -424,6 +409,7 @@ body {
     .about {
         grid-template-columns: 1fr;
         padding: 40px 20px;
+        gap: 20px;
     }
     
     .about__logo {
