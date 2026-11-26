@@ -208,8 +208,9 @@ body {
 /* ИСПРАВЛЕНО: Убрали min-height, чтобы сетка работала корректно */
 .lots__card-list-item {
     list-style: none;
-    /* min-height: 450px; <-- УДАЛЕНО */
+    /* min-height: 450px; <-- УДАЛИ эту строку, если она есть */
 }
+
 
 .card-link {
     display: block;
@@ -387,6 +388,7 @@ body {
     display: block;
     width: 100%;
 }
+
 
 /* ---------- Адаптив (минимальный, но обязательный) ---------- */
 @media (max-width: 768px) {
