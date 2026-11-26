@@ -42,13 +42,14 @@
             <div class="overlay"></div>
             <div class="cover__inner">
                 <h1 class="cover__title">
-    <span class="aligned-text aligned-text_left">ОНО</span>
-    <span class="aligned-text aligned-text_center">ТЕБЕ</span>
-    <span class="aligned-text aligned-text_right letter-spacing-extended">НАДО<span class="no-letter-spacing">.</span></span>
-</h1>
+                    <span class="aligned-text aligned-text_left">ОНО</span>
+                    <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+                    <span class="aligned-text aligned-text_right letter-spacing-extended">НАДО<span class="no-letter-spacing">.</span></span>
+                </h1>
 
                 <div class="cover__description">
                     <p class="cover__description-text">Аукцион вещей, в которые никто не верил. Найди свою историю.</p>
+                    <!-- Кнопка оставляем как есть, если в style.css у неё прописаны все стили -->
                     <button type="button" class="bet-button">Сделать ставку</button>
                 </div>
             </div>
@@ -57,35 +58,39 @@
         <!-- Секция 2: Лоты -->
         <section class="lots">
             <h2 class="lots__heading">Лоты</h2>
+            
+            <!-- ВАЖНО: Список должен содержать только li. Внутри li лежит article. -->
             <ul class="lots__card-list">
                 <li class="lots__card-list-item">
-                    <a href="#" class="card-link">
-                        <article class="card card_type_film">
+                    <!-- Ссылка перенесена ВНУТРЬ article, чтобы не ломать сетку -->
+                    <article class="card card_type_film">
+                        <a href="#" class="card-link">
                             <div class="overlay"></div>
                             <h3 class="card__title">Фильм «Вверх по лестнице, ведущей вниз»</h3>
                             <p class="card__text">Редкая копия на плёнке, restored edition</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </li>
                 <li class="lots__card-list-item">
-                    <a href="#" class="card-link">
-                        <article class="card card_type_book">
+                    <article class="card card_type_book">
+                        <a href="#" class="card-link">
                             <div class="overlay"></div>
                             <h3 class="card__title">Книга «Карта тайных миров»</h3>
                             <p class="card__text">Первое издание с авторской пометкой</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </li>
                 <li class="lots__card-list-item">
-                    <a href="#" class="card-link">
-                        <article class="card card_type_picture">
+                    <article class="card card_type_picture">
+                        <a href="#" class="card-link">
                             <div class="overlay"></div>
                             <h3 class="card__title">Картина «Краски утреннего солнца»</h3>
                             <p class="card__text">Холст, масло. Автор неизвестен</p>
-                        </article>
-                    </a>
+                        </a>
+                    </article>
                 </li>
             </ul>
+            
             <a href="#" class="lots__look-more-link">посмотреть больше</a>
         </section>
 
