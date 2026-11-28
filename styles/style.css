@@ -23,15 +23,15 @@ header {
 }
 
 .header__links-list-item_no-bullit {
-    list-style-type: none;    
+    list-style-type: none;
 }
 
 .header__link {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
-.header__link_active{
+.header__link_active {
     text-decoration: none;
 }
 
@@ -70,12 +70,12 @@ header {
 }
 
 .cover {
-    background-image: url('../images/cover.jpg'); 
+    background-image: url('../images/cover.jpg');
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 757px;
-    position: relative; 
+    position: relative;
     z-index: -2;
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@ header {
     margin-bottom: 180px;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -93,7 +93,7 @@ header {
     z-index: -1;
 }
 
-.cover__title{
+.cover__title {
     font-size: 100px;
     color: white;
     text-transform: uppercase;
@@ -103,28 +103,28 @@ header {
     height: 385px;
 }
 
-.aligned-text{
+.aligned-text {
     display: block;
     margin-bottom: 20px;
 }
 
-.aligned-text_left{
+.aligned-text_left {
     text-align: left;
 }
 
-.aligned-text_center{
+.aligned-text_center {
     text-align: center;
 }
 
-.aligned-text_right{
+.aligned-text_right {
     text-align: right;
 }
 
-.letter-spacing-extended{
+.letter-spacing-extended {
     letter-spacing: 30px;
 }
 
-.cover__description{
+.cover__description {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -133,7 +133,7 @@ header {
     margin-top: 600px;
 }
 
-.cover__description-text{
+.cover__description-text {
     color: white;
     font-weight: 400;
     font-size: 22px;
@@ -146,8 +146,8 @@ header {
     display: inline-block;
     padding: 16px 40px;
     background-color: transparent;
-    border: 2px solid #fff; 
-    color: #fff; 
+    border: 2px solid #fff;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -245,21 +245,19 @@ header {
     width: fit-content;
 }
 
-
-
-.about{
+.about {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 72px;
     margin-bottom: 180px;
 }
 
-.about__column{
+.about__column {
     display: flex;
     flex-direction: column;
 }
 
-.about__logo{
+.about__logo {
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -270,20 +268,20 @@ header {
     align-self: center;
 }
 
-.about__logo-image{
+.about__logo-image {
     width: 141px;
     height: 112px;
 }
 
-.about__title{
+.about__title {
     text-transform: uppercase;
-    font-width: 700;
+    font-weight: 700; /* ИСПРАВЛЕНО: было font-width */
     font-size: 40px;
     margin-bottom: 100px;
     margin-top: 133px;
 }
 
-.about__text{
+.about__text {
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 24px;
@@ -320,11 +318,11 @@ footer {
     flex-direction: column;
 }
 
-.footer__menu-list-item{
+.footer__menu-list-item {
     margin-top: 4px;
 }
 
-.footer__social-list{
+.footer__social-list {
     justify-content: flex-end;
 }
 
